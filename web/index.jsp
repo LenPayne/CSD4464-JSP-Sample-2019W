@@ -50,7 +50,7 @@
             <h2>Play a Guessing Game</h2>
             <p>Your last guess was: <%= obj.getNumber() %></p>
             <p>Result: <%= obj.validate() %></p>
-            <form>
+            <form method="post">
                 <label for="number"><%= obj.getPrompt() %></label>
                 <%-- In the following:
                      - the name="number" attribute is what feeds a value to the 
